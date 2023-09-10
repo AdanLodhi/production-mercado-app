@@ -7,7 +7,7 @@ import authRoutes from "./routes/authRoute.js";
 import productRoutes from "./routes/productRoutes.js"
 import categoryRoutes from './routes/CategoryRoutes.js'
 import path from "path"
-import {fileURLToPath} from "url":
+import {fileURLToPath} from "url"
 
 //DotEnv
 dotenv.config();
