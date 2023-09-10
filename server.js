@@ -7,6 +7,7 @@ import authRoutes from "./routes/authRoute.js";
 import productRoutes from "./routes/productRoutes.js"
 import categoryRoutes from './routes/CategoryRoutes.js'
 import path from "path"
+import {fileURLToPath} from "url":
 
 //DotEnv
 dotenv.config();
@@ -14,6 +15,10 @@ dotenv.config();
 //Database-Config
 connectDatabase();
 
+// esmodule fix
+const __filename = fileURLToPath(import.meta.url)
+const __dirname = path.dirname(__filename)
+ 
 const app = express();
 
 //Middleware
